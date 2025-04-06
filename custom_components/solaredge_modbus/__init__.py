@@ -64,7 +64,7 @@ SOLAREDGE_MODBUS_SCHEMA = vol.Schema(
         vol.Optional(
             CONF_MODBUS_ADDRESS, default=DEFAULT_MODBUS_ADDRESS
         ): cv.positive_int,
-        vol.Optional(CONF_POWER_CONTROL, default=DEFAULT_POWER_CONTROL): cv.boolean,
+        vol.Optional(DEFAULT_POWER_CONTROL): cv.boolean,
         vol.Optional(CONF_READ_METER1, default=DEFAULT_READ_METER1): cv.boolean,
         vol.Optional(CONF_READ_METER2, default=DEFAULT_READ_METER2): cv.boolean,
         vol.Optional(CONF_READ_METER3, default=DEFAULT_READ_METER3): cv.boolean,
